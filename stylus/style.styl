@@ -1,0 +1,163 @@
+@import "normalize.styl"
+@import "icon.styl"
+@import "nib"
+@import "nib/vendor"
+/*prefixes*/
+vendor-prefixes = o ms moz webkit official
+azul = #004697
+azulOscuro = #202951
+negro = #333 
+blanco = #F9F9F9
+body
+    background blanco
+    color  negro
+.Header
+    ul
+        margin 0;
+    .active
+        border-bottom 3px solid azul
+        
+    &-menu1
+        width: 100%;
+        overflow: hidden;
+        nav
+            display: inline-block;
+            float: right;
+            font-size 0
+            ul
+                list-style: none;
+                display: inline-block;
+                padding: 1em;
+                background azul
+                font-size: 13px;
+                cursor pointer
+                transition: all 0.5s ease-in;
+                &:hover
+                    background azulOscuro
+                li
+                    color blanco
+    &-menu2
+        width: 100%;
+        overflow: hidden;
+        border-bottom: 1px solid #004697;
+        position relative
+        .Logo
+            display inline-block
+        
+        nav
+            display: inline-block;
+            right: 0;
+            font-size: 0;
+            bottom: 0;
+            position: absolute;
+            ul
+                list-style: none;
+                display: inline-block;
+                padding: 1em;
+                font-size: 16px;
+                cursor pointer
+                transition: all 0.5s ease-in;
+                border-bottom 3px solid transparent
+                &:hover
+                     border-bottom 3px solid azul
+                li
+                    color azul
+                    
+/* Menu Aside */
+.Contenedor-menu
+    display: inline-block;
+    margin-top: 1em;
+    width: 20%;
+    .MenuAside
+        &-ul
+            padding: 0;
+            margin: 0;
+        &-li
+            padding: 1em 2em;
+            color: azul;
+            transition: all 0.5s ease-in;            
+            text-align: center;
+            border-right: 3px solid transparent;
+            cursor pointer
+            list-style: none;
+            &:hover
+                border-right: 3px solid azul;
+                box-shadow: 1px 3px 10px #ccc;
+        .active
+            border-right: 3px solid #004697;
+            box-shadow: 1px 3px 10px #ccc;
+            font-weight bold
+.Contenedor-content
+    display: inline-block;
+    width: 80%;
+    float: right;
+    margin-top: 1em;
+    .cont1
+        display block
+    .cont2
+    .cont3
+        display none
+    .contents
+        text-align center
+        .contents-chart
+            position relative
+            width: 400px;
+            display inline-block
+            .mayor
+                position: absolute;
+                margin: 0 auto;
+                right: 42%;
+                top: 9em;
+                h2
+                h3
+                    margin 0
+                
+          
+        h1
+            color azul
+            margin 0
+            text-align center
+        form
+            display: inline-block;
+            width: 40%;
+            padding: 1em;
+            input
+                overflow: auto;
+                resize: none;
+                display: inline-block;
+                padding: .2em 1.2em;
+                width: 100%;
+                box-sizing: border-box;
+                color: #004697;
+                transition: all 0.5s ease-in; 
+            select
+            textarea
+                overflow: auto;
+                resize: none;
+                display: inline-block;
+                padding: 0.8em;
+                width: 100%;
+                box-sizing: border-box;
+                color: #004697;
+                transition: all 0.5s ease-in;
+            .button
+                box-sizing: border-box;
+                width: 100%;
+                padding: 0.8em;
+                background azul
+                color blanco
+                border none
+                transition: all 0.5s ease-in;
+                &:hover
+                    background azulOscuro
+
+    
+        
+        
+    
+
+
+
+
+
+
