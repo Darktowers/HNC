@@ -1,11 +1,15 @@
-<?php include_once("header.php"); ?>
+<?php session_start(); 
+@$max=$_SESSION["maximo"];
+@$name=$_SESSION["Nombre_max"];
+@$color=$_SESSION["color"];
+include_once("header.php"); ?>
 <section class="Contenedor">
     <div class="Contenedor-menu">
         <?php include_once("menu_Novedades.php"); ?>
     </div>
     <div class="Contenedor-content">
         <div class="contents cont1">
-            <h1 class="title">Nueva Novedad</h1>
+            <h1 class="title">Registrar ventas</h1>
             <form action="">
                 <input name="descripcion" placeholder="Descripcion">
                 <select name="programa" id="">
@@ -42,26 +46,14 @@
         </div>
         <div class="contents cont2">
             <h1 class="title">Indicadores</h1>
-            <div class="panel-general">
-                <div class="registradas">
-                    <h3>Numero de novedades</h3>
-                    <div class="number">45</div>
-                </div>
-                <div class="solucionadas">
-                    <h3>Numero de soluciones</h3>
-                    <div class="number">13</div>
-                </div>
-                <div class="nosolucionadas">
-                    <h3>Sin solucion</h3>
-                    <div class="number">22</div>
-                </div>
-            </div>
+          
             <div class="contents-chart">
-                <h2>Error mas comun</h2>
+                <h2>Vendedor con mas productos vendidos</h2>
                 <div class="mayor">
-                    <h3 class="mayor-des">Humano</h3>
-                    <h3 class="mayor-num">45%</h3> 
-                    <?php ?>
+                    <h3 class="mayor-des"><?php echo"$name" ?></h3>
+                    <h3 class="mayor-num"><?php echo "$max"?></h3> 
+                  
+                   
                 </div>
                 <canvas id="chart-area" />
             </div>
