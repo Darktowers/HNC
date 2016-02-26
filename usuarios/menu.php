@@ -2,10 +2,10 @@
     <div class="Header-menu1">
         <nav class="Header-menu1Nav">
             <ul class="Header-menu1Ul">
-                <li class="Header-menuItem"> Carlos Andres Cruz</li>
+                <li class="Header-menuItem"> Cristina Cuchivaque</li>
             </ul>
             <ul class="Header-menu1Ul">
-                <li class="Header-menuItem">Finanzas y contabilidad</li>
+                <li class="Header-menuItem">Auxiliar</li>
             </ul>
             <ul class="Header-menu1Ul">
                 <li class="Header-menuItem">Mi perfil</li>
@@ -20,9 +20,7 @@
             <ul class="Header-menu2Ul">
                 <li class="Header-menuItem">Sistema Integral Inducción</li>
             </ul>
-            <ul class="Header-menu2Ul">
-                <li class="Header-menuItem">Mis Funciones</li>
-            </ul>
+
             <ul class="Header-menu2Ul active">
                 <li class="Header-menuItem ">Novedades Procesos </li>
             </ul>

@@ -1,4 +1,9 @@
-<?php include_once("header.php"); ?>
+<?php include_once("header.php");
+session_start();
+@$max=$_SESSION["maximo"];
+@$name=$_SESSION["Nombre_max"];
+ ?>
+
 <section class="Contenedor">
     <div class="Contenedor-menu">
         <?php include_once("menu_Novedades.php"); ?>
@@ -59,9 +64,9 @@
             <div class="contents-chart">
                 <h2>Error mas comun</h2>
                 <div class="mayor">
-                    <h3 class="mayor-des">Humano</h3>
-                    <h3 class="mayor-num">45%</h3> 
-                    <?php ?>
+                   <h3 class="mayor-des"><?php echo"$name" ?></h3>
+                    <h3 class="mayor-num"><?php echo "$max"?></h3> 
+                   
                 </div>
                 <canvas id="chart-area" />
             </div>
